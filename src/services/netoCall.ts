@@ -14,6 +14,8 @@ export const netoCall = (prefix: string, message: Message, client: ClientApplica
 
     else if (message.content.trim() === prefix + ' teste') message.channel.send('Teste OK!');
 
+    else if (message.content.trim() === prefix + ' boa noite') message.channel.send('Boa noite seu merda');
+
     else if (breve.includes(message.content.split(' ')[1])) message.channel.send('Funcionalidade em construção! Será habilitada em breve!')
 
     else message.channel.send('Comando não reconhecido, digite "neto help" para acessar os comandos disponíveis!');
