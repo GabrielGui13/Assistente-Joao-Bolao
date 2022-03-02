@@ -1,5 +1,5 @@
 import { Client, Intents } from "discord.js";
-import { netoCall } from "./src/services/netoCall";
+import { netoCall } from "./src/services/joaoCall";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -21,15 +21,15 @@ const client = new Client({ intents: [
 
 //Online
 client.on("ready", () => {
-    console.log(`Assistente Netola online e roteando como ${client.user.tag}!`);
+    console.log(`${client.user.tag} online e roteando!`);
     client.user.setActivity("Guilherme sendo ruim", {
         type: "WATCHING"
     });
     //client.channels.cache.get('740204628200652830').send('Abram as pernas mulheres e saiam da frente homens, o imperador do mundo chegou!')
 });
 
-client.on("message", async message => {
-    const prefix = "neto";
+client.on("messageClient", async message => {
+    const prefix = "joao";
     if (message.content.split(' ')[0] === prefix) {
         netoCall(prefix, message, client);
     }
