@@ -28,7 +28,7 @@ client.on("ready", () => {
     //client.channels.cache.get('740204628200652830').send('Abram as pernas mulheres e saiam da frente homens, o imperador do mundo chegou!')
 });
 
-client.on("messageClient", async message => {
+client.on("message", async message => {
     const prefix = "joao";
     if (message.content.split(' ')[0] === prefix) {
         netoCall(prefix, message, client);
