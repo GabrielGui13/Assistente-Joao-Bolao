@@ -1,0 +1,32 @@
+{
+  "name": "Assistente-Netola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node .",
+    "dev": "ts-node-dev ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielGui13/Assistente-Netola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielGui13/Assistente-Netola/issues"
+  },
+  "homepage": "https://github.com/GabrielGui13/Assistente-Netola#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "ts-node": "^10.6.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
